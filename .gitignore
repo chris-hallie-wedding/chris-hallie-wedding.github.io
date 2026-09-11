@@ -1,0 +1,23 @@
+# ── OS / editor cruft ───────────────────────────────
+.DS_Store
+._*
+Thumbs.db
+desktop.ini
+.idea/
+.vscode/
+*.swp
+*~
+
+# ── working files, not part of the published site ───
+# source artwork, invite prints and scratch notes live here
+.tmp/
+scratchpad/
+venv/
+*.log
+
+# ── never commit these ──────────────────────────────
+# keep guest data out of a public repo
+rsvp-responses*.csv
+rsvp-responses*.xlsx
+guests*.csv
+guests*.xlsx
