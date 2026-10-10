@@ -219,7 +219,10 @@ a {
 
 /* ══════════════════════ HERO ══════════════════════ */
 .hero {
-  padding: clamp(28px, 6vw, 64px) var(--gut) var(--sec);
+  padding: clamp(28px, 6vw, 64px) var(--gut);
+}
+.hero + .sec {
+  padding-top: clamp(40px, 6vw, 72px);
 }
 .invite {
   max-width: 620px;
@@ -601,10 +604,39 @@ a {
 .gal-wide figure {
   flex: 0 1 230px;
 }
+/* phones: swipe sideways through photos instead of stacking them */
 @media (max-width: 560px) {
-  .gal-wide figure {
-    flex-basis: 100%;
-    max-width: 340px;
+  .gal,
+  .tl-art:not(.tl-art-solo) {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    overscroll-behavior-x: contain;
+    scrollbar-width: none;
+  }
+  .gal::-webkit-scrollbar,
+  .tl-art::-webkit-scrollbar {
+    display: none;
+  }
+  .gal {
+    gap: 14px;
+    margin-inline: calc(-1 * var(--gut));
+    padding-inline: var(--gut);
+    scroll-padding-inline: var(--gut);
+  }
+  .gal figure {
+    flex: 0 0 78%;
+    scroll-snap-align: start;
+  }
+  .tl-art:not(.tl-art-solo) {
+    margin-right: calc(-1 * var(--gut));
+    padding-right: var(--gut);
+  }
+  .tl-art:not(.tl-art-solo) img {
+    flex: 0 0 62%;
+    scroll-snap-align: start;
   }
 }
 .gal img {
@@ -773,6 +805,13 @@ a {
 }
 .contact a:hover {
   border-bottom-color: var(--gold);
+}
+.emails {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 6px 18px;
+  margin-top: 8px;
 }
 .closing {
   margin-top: clamp(30px, 5vw, 42px);

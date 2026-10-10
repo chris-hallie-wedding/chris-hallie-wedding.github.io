@@ -106,7 +106,7 @@ window.I18N = {
 
     'gal.kicker': 'Tranh vẽ',
     'gal.title': 'Một vài khoảnh khắc',
-    'gal.lede': 'Cùng một nét vẽ với tấm thiệp giấy của chúng mình — vài khoảnh khắc nhỏ trong cuộc sống của hai đứa.',
+    'gal.lede': 'Vài khoảnh khắc nhỏ trong cuộc sống của hai đứa.',
     'gal.alt1': 'Tranh vẽ cô dâu và chú rể nắm tay bên khung cửa sổ xanh',
     'gal.alt2': 'Tranh vẽ cô dâu và chú rể chụp ảnh cưới cùng bó hoa',
     'gal.alt3': 'Tranh vẽ chú rể khoác áo cho cô dâu dưới tán cây',
@@ -145,7 +145,7 @@ window.I18N = {
       'Khoảng 300 km về phía nam. Máy bay khoảng 1 giờ (HAN → VII), tàu hoả khoảng 6–7 giờ, xe khách hoặc xe riêng khoảng 5–6 giờ.',
     'tr.p3.title': 'Khách sạn',
     'tr.p3.body':
-      'Chúng mình đang chọn vài chỗ ở dễ chịu gần hai địa điểm tiệc và sẽ cập nhật sớm. Trong lúc chờ, cứ nhắn chúng mình — chúng mình sẽ giúp bạn tìm chỗ nghỉ thật thoải mái.',
+      'Nếu bạn cần gợi ý chỗ ở ở Hà Nội hay Vinh, cứ liên hệ trực tiếp với chúng mình nhé — chúng mình sẽ giúp bạn tìm chỗ nghỉ thật thoải mái.',
     'tr.p4.title': 'Một tuần ở giữa',
     'tr.p4.body':
       'Hai buổi lễ cách nhau bảy ngày. Nếu bạn ở lại được cả tuần thì còn gì bằng — thêm thời gian bên nhau, thêm những bữa ăn ngon, có khi thêm một chuyến đi chơi nữa. Cứ nói với chúng mình để cùng lên kế hoạch nhé.',
@@ -155,9 +155,9 @@ window.I18N = {
     'rsvp.lede':
       'Cho chúng mình biết bạn đến được buổi nào (hoặc cả hai!) để chúng mình giữ chỗ cho bạn — và biết mà ngóng bạn trong ngày vui.',
     'rsvp.byline': 'Trước ngày',
-    'rsvp.deadline': '16.10.2026',
+    'rsvp.deadline': '23.10.2026',
     'rsvp.cta': 'Mở phiếu phản hồi',
-    'rsvp.fine': 'Phiếu có cả tiếng Việt và tiếng Anh — bạn điền bằng tiếng nào cũng được.',
+    'rsvp.fine': 'Phiếu viết bằng tiếng Anh — bạn cứ trả lời bằng tiếng Việt cũng được nhé.',
 
     'faq.kicker': 'Có lẽ bạn đang thắc mắc',
     'faq.title': 'Hỏi & đáp',
@@ -181,7 +181,7 @@ window.I18N = {
     'faq.q7': 'Mình đến cả hai buổi được không?',
     'faq.a7': 'Được chứ, và chúng mình sẽ vui lắm luôn! Bạn chỉ cần chọn “cả hai” trong phiếu phản hồi nhé.',
 
-    'foot.ask': 'Có gì thắc mắc, băn khoăn, hay chỉ muốn hỏi thăm — cứ nhắn chúng mình nhé:',
+    'foot.ask': 'Có gì thắc mắc, băn khoăn, hay chỉ muốn hỏi thăm — cứ email cho chúng mình nhé:',
     'foot.closing': 'Mong được gặp bạn trong ngày vui!',
   },
 
@@ -289,7 +289,7 @@ window.I18N = {
 
     'gal.kicker': 'Illustrated',
     'gal.title': 'A Few Moments',
-    'gal.lede': 'Painted by the same hand as our paper invitation — a few little moments from our life together.',
+    'gal.lede': 'A few little moments from our life together.',
     'gal.alt1': 'Illustration of the bride and groom holding hands by a green window',
     'gal.alt2': 'Illustration of the bride and groom standing together with a bouquet',
     'gal.alt3': 'Illustration of the groom draping his jacket over the bride beneath a tree',
@@ -328,7 +328,7 @@ window.I18N = {
       'About 300 km south. Roughly 1 hour by air (HAN → VII), 6–7 hours by train, or 5–6 hours by coach or private car.',
     'tr.p3.title': 'Where to stay',
     'tr.p3.body':
-      "We're picking out a few comfortable places near each venue and will add them here soon. In the meantime, just message us — we're happy to help you find somewhere lovely.",
+      "If you'd like suggestions for where to stay in Hanoi or Vinh, please get in touch with us directly — we're happy to help you find somewhere lovely.",
     'tr.p4.title': 'The week in between',
     'tr.p4.body':
       "There are seven days between the two celebrations. If you can stay for the week, we'd love that — more time together, more good food, maybe a trip or two. Tell us and we'll plan it with you.",
@@ -338,9 +338,9 @@ window.I18N = {
     'rsvp.lede':
       'Tell us which celebration you can join (or both!) so we can save you a seat — and know to look out for you on the day.',
     'rsvp.byline': 'Please reply by',
-    'rsvp.deadline': '16 October 2026',
+    'rsvp.deadline': '23 October 2026',
     'rsvp.cta': 'Open the RSVP form',
-    'rsvp.fine': 'The form is in both Vietnamese and English — use whichever feels easier.',
+    'rsvp.fine': 'It only takes a minute to fill in.',
 
     'faq.kicker': 'You might be wondering',
     'faq.title': 'Questions & Answers',
@@ -364,7 +364,7 @@ window.I18N = {
     'faq.q7': 'Can I come to both?',
     'faq.a7': 'Absolutely — that would make us so happy. Just choose “both” on the RSVP form.',
 
-    'foot.ask': 'Questions, worries, or just want to say hi? Message us anytime:',
+    'foot.ask': 'Questions, worries, or just want to say hi? Email us anytime:',
     'foot.closing': "We can't wait to celebrate with you.",
   },
 }

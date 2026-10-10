@@ -55,23 +55,22 @@ grep -n REPLACE index.html
 
 ## The RSVP form
 
-The form is a **single bilingual Google Form**, linked out rather than embedded
-(Google Forms cannot switch languages, and one form means one response sheet
-instead of two to merge by hand). Suggested questions — each label carries both
-languages:
+The form is a **single English-only Google Form**, linked out rather than embedded
+(one form means one response sheet instead of two to merge by hand). The site's
+RSVP note tells Vietnamese guests they can answer in Vietnamese. Questions:
 
-1. **Tên của bạn / Your name** — short answer · *required*
-2. **Bạn sẽ tham dự buổi nào? / Which celebration will you join?** — multiple choice · *required*
-   - `Hà Nội — 14.11.2026`
-   - `Vinh — 21.11.2026`
-   - `Cả hai / Both`
-   - `Rất tiếc mình không tham dự được / Sorry, I can't make it`
-3. **Tổng số người tham dự, kể cả bạn / Total guests, including you** — short answer · *required*
-4. **Có trẻ nhỏ không? Mấy bé? / Any children? How many?** — short answer
-5. **Bạn có nhu cầu ăn đặc biệt không? (ăn chay, dị ứng…) / Any dietary needs? (vegetarian, allergies…)** — paragraph
-6. **Số điện thoại hoặc Zalo / Phone or Zalo** — short answer
-7. **Bạn bay từ nước ngoài về? / Travelling from abroad?** — Yes / No
-8. **Lời nhắn cho chúng mình / A message for us** — paragraph
+1. **Your name** — short answer · *required*
+2. **Which celebration will you join?** — multiple choice · *required*
+   - `Hanoi — 14 November 2026`
+   - `Vinh — 21 November 2026`
+   - `Both`
+   - `Sorry, I can't make it`
+3. **Total guests, including you** — short answer · *required*
+4. **Any children? How many?** — short answer
+5. **Any dietary needs? (vegetarian, allergies…)** — paragraph
+6. **Phone or Zalo** — short answer
+7. **Travelling from abroad?** — Yes / No
+8. **A message for us** — paragraph
 
 In the form's settings, turn on **Collect email addresses** only if you want it —
 it adds friction for guests who are not signed in to Google.

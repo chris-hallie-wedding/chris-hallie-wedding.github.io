@@ -14,6 +14,7 @@ desktop.ini
 scratchpad/
 venv/
 *.log
+.playwright-mcp/
 
 # ── never commit these ──────────────────────────────
 # keep guest data out of a public repo
