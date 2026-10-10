@@ -35,21 +35,17 @@ choice in `localStorage`.
 
 ---
 
-## ⚠️ Three placeholders to replace before you share the link
+## Links and contacts
 
-Nothing else is required, but the site is not shareable until these are real.
+All set — nothing is left as a placeholder.
 
-| Where | Placeholder | Replace with |
-|---|---|---|
-| `index.html` — `id="rsvp-link"` | `https://forms.gle/REPLACE-WITH-YOUR-FORM` | your Google Form share link |
-| `index.html` — footer | `https://wa.me/REPLACE` | `https://wa.me/84xxxxxxxxx` (no `+`, no spaces) |
-| `index.html` — footer | `https://zalo.me/REPLACE` | `https://zalo.me/84xxxxxxxxx` |
+| Where | Value |
+|---|---|
+| `index.html` — `id="rsvp-link"` | `https://forms.gle/4wtDC4QDsTf2Fm3j8` (the Google Form) |
+| `index.html` — footer `.contact` | `mailto:` links for `tranduckhanh96@gmail.com` and `daothuhuong96@gmail.com` |
 
-Find them all at any time:
-
-```sh
-grep -n REPLACE index.html
-```
+To change the form, swap the `href` on `#rsvp-link`. The footer's lead-in text is
+`foot.ask` in `assets/js/i18n.js`.
 
 ---
 
@@ -75,8 +71,9 @@ RSVP note tells Vietnamese guests they can answer in Vietnamese. Questions:
 In the form's settings, turn on **Collect email addresses** only if you want it —
 it adds friction for guests who are not signed in to Google.
 
-The reply-by date shown on the site is **16 October 2026** (`rsvp.deadline` in
-`assets/js/i18n.js`), about four weeks before Hanoi.
+The reply-by date shown on the site is **23 October 2026** (`rsvp.deadline` in
+`assets/js/i18n.js`), three weeks before Hanoi. Google Forms will not close itself
+on that date — turn off **Accepting responses** by hand when you are done.
 
 ---
 
@@ -105,6 +102,10 @@ console.log("only in en:", k(en).filter(x=>!(x in vi)));
 **Our Story** is eight dated milestones (`story.i1.*` through `story.i8.*`); the
 milestones that have an illustration carry it as `story.iN.alt` text. To add one,
 copy an `<li>` in `index.html` and add its keys to both languages.
+
+On phones (≤ 560px) the photo gallery (`.gal`) and any milestone with more than one
+illustration (`.tl-art` without `.tl-art-solo`) become sideways-swipe rows with
+scroll snapping instead of stacking — see the media query in `assets/css/style.css`.
 
 ---
 
@@ -221,8 +222,8 @@ selection (Parisienne, Sacramento, Tangerine, Libre Baskerville and others).
 
 ---
 
-## Still to fill in
+## Still to do
 
-- [ ] Google Form link, WhatsApp number, Zalo number (see above)
-- [ ] Hotel suggestions near each venue (`tr.p3.body`)
+- [x] Google Form link and contact emails
+- [x] Hotels — `tr.p3.body` now asks guests to contact you for suggestions
 - [ ] Buy a domain before the wide send in Vietnam
