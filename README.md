@@ -103,10 +103,9 @@ console.log("only in en:", k(en).filter(x=>!(x in vi)));
 '
 ```
 
-**Our Story is deliberately placeholder.** Four dated milestones are in place with
-`(Nội dung sẽ được cập nhật.)` / `(Coming soon.)` as the body — the dates give the
-section its shape so you can drop the real words in later without touching layout.
-Keys: `story.i1.*` through `story.i4.*`.
+**Our Story** is eight dated milestones (`story.i1.*` through `story.i8.*`); the
+milestones that have an illustration carry it as `story.iN.alt` text. To add one,
+copy an `<li>` in `index.html` and add its keys to both languages.
 
 ---
 
@@ -171,20 +170,27 @@ apps and scrapers will not resolve a relative image path:
 ## How the artwork was prepared
 
 Source illustrations live in `.tmp/` (git-ignored — they are working files, not
-part of the site). The published assets in `assets/art/` were derived from them:
+part of the site). The published assets in `assets/art/` are derived from them by
+the `normalize-art-background` skill (`.agents/skills/normalize-art-background/`).
+Run it on every new illustration so the grounds stay uniform:
 
-- **Captions removed.** Three illustrations had text painted into the artwork
+```sh
+uv run .agents/skills/normalize-art-background/scripts/normalize_art.py ".tmp/images/<src>.png" --name <stem>
+```
+
+- **One paper for every illustration.** The sources came with different grounds —
+  clean cream, grey-beige, peach. Watercolour is paper × ink, so the script measures
+  each source's paper, divides it out, and multiplies the ink onto `--card`
+  (`#FBF8F1`). Tiles and the hero then share one ground, seamless inside the
+  `.framed` card, with no alpha channel.
+- **Captions erased.** Three illustrations had text painted into the artwork
   (`together 2024`, `OUR DAY 2024`, `PERFECT FIT`). The `2024` contradicted a 2026
-  wedding and the English text would not translate, so the caption strips were
-  cropped off and the captions re-set as real HTML text instead — translatable,
-  restylable, and correct.
-- **Cropped by ink detection**, not by eye: each subject's bounding box was found by
-  measuring rows and columns that carry real ink, ignoring paper grain, then the
-  crop window was clamped inside the source so every pixel is real artwork —
-  no padding bands, no stretched edges.
-- **Alpha-feathered** for the hero and the margin decorations: the artwork's cream
-  ground is tone-matched to the exact cream behind it and the border faded to
-  transparent, so the illustrations dissolve into the page with no visible seam.
+  wedding and the English text would not translate, so the script erases small
+  components separated from the subject and the captions are re-set as real HTML
+  text instead — translatable, restylable, and correct.
+- **Cropped by ink detection**, not by eye: the subject's bounding box comes from
+  pixels that carry real ink (paper grain ignored) plus a fixed margin, in a 3:4
+  window (hero 862:1047). A window reaching past the source is padded with paper.
 - **Converted to WebP** at two or three widths each with `srcset`.
   **16.3 MB of PNG became under 1 MB** — this matters on Vietnamese mobile data.
 - **`assets/og/`** holds the composed share cards: 1200×630 for most apps and
@@ -219,7 +225,5 @@ selection (Parisienne, Sacramento, Tangerine, Libre Baskerville and others).
 ## Still to fill in
 
 - [ ] Google Form link, WhatsApp number, Zalo number (see above)
-- [ ] Our Story — four milestone dates and their text (`story.i1`–`story.i4`)
 - [ ] Hotel suggestions near each venue (`tr.p3.body`)
-- [ ] Confirm the 2019 / 2022 / 2024 milestone years are right
 - [ ] Buy a domain before the wide send in Vietnam
