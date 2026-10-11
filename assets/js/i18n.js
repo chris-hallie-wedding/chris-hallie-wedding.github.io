@@ -2,6 +2,7 @@
    To edit wording, change it here — nothing else needs touching. */
 window.I18N = {
   vi: {
+    'meta.title': 'Trần Đức Khánh & Đào Thu Hường — 14.11.2026 · 21.11.2026',
     brand: 'K & H',
     'a11y.skip': 'Chuyển tới nội dung',
     'a11y.menu': 'Mở menu',
@@ -45,7 +46,8 @@ window.I18N = {
     'story.i4.body':
       'Utah là nơi chúng mình cùng học trượt tuyết (và ngã không biết bao nhiêu lần), trượt khắp những ngọn núi có thể tới, leo lên các đỉnh cao nhất bang và chạy nhiều cuộc đua đến mức không đếm nổi. Trượt tuyết và chạy bộ dần thành “chuyện của hai đứa” — những giờ phút bên nhau mà chúng mình yêu nhất.',
     'story.i4.alt1': 'Tranh vẽ hai người trong đồ trượt tuyết ngồi trên ghế, bên cạnh là tấm ván trượt màu xanh lá',
-    'story.i4.alt2': 'Tranh vẽ hai người trong trang phục chạy bộ, đứng choàng vai nhau trên con đường mòn',
+    'story.i4.alt2':
+      'Tranh vẽ hai người đi leo núi với gậy chống, đứng choàng vai nhau trên đỉnh núi nhìn xuống hồ nước',
     'story.i4.alt3': 'Tranh vẽ hai người sau cuộc đua, chú rể đeo huy chương hoàn thành',
     'story.i5.date': '08.2024',
     'story.i5.title': 'Lời cầu hôn trên đỉnh núi',
@@ -57,15 +59,9 @@ window.I18N = {
     'story.i6.body':
       'Chúng mình trao nhau lời thề nguyện ở Salt Lake City — thành phố đã trở thành nhà của hai đứa từ lúc nào không hay.',
     'story.i6.alt': 'Tranh vẽ chú rể mặc gi-lê nắm tay cô dâu cầm bó hoa nhỏ trong ngày cưới',
-    'story.i7.date': '01.2026',
-    'story.i7.title': 'Chìa khóa nhà đầu tiên',
+    'story.i7.date': '11.2026',
+    'story.i7.title': 'Về nhà chung vui',
     'story.i7.body':
-      'Cầm chìa khóa trên tay, ngồi ăn pizza giữa căn phòng còn trống trơn — cuối cùng chúng mình cũng có một nơi thật sự là của riêng mình.',
-    'story.i7.alt1': 'Tranh vẽ hai người chụp ảnh selfie, giơ cao chìa khóa nhà mới',
-    'story.i7.alt2': 'Tranh vẽ hai người ngồi trên sàn nhà mới cùng hai hộp pizza',
-    'story.i8.date': '11.2026',
-    'story.i8.title': 'Về nhà chung vui',
-    'story.i8.body':
       'Và giờ, chúng mình mang tất cả những điều ấy về Hà Nội và Vinh, để chung vui cùng gia đình và bạn bè. Điều tuyệt nhất của chương này là có bạn ở đó cùng chúng mình.',
 
     'cer.kicker': 'Trân trọng kính mời',
@@ -109,12 +105,18 @@ window.I18N = {
     'gal.lede': 'Vài khoảnh khắc nhỏ trong cuộc sống của hai đứa.',
     'gal.alt1': 'Tranh vẽ cô dâu và chú rể nắm tay bên khung cửa sổ xanh',
     'gal.alt2': 'Tranh vẽ cô dâu và chú rể chụp ảnh cưới cùng bó hoa',
-    'gal.alt3': 'Tranh vẽ chú rể khoác áo cho cô dâu dưới tán cây',
     'gal.alt4':
       'Tranh vẽ hai người ôm vai nhau trong trang phục mùa hè: anh đeo kính râm và mũ lưỡi trai, cô mặc váy trắng dài',
     'gal.alt5': 'Tranh vẽ hai người trong trang phục đi Hawaii: anh mặc áo hoa, cô cài hoa trên tóc',
     'gal.alt6': 'Tranh vẽ hai người kề má nhau giữa những bông hoa dại mùa thu',
     'gal.alt7': 'Tranh vẽ hai người trong áo len màu kem đứng giữa những bông hoa dại',
+    'gal.alt8': 'Tranh vẽ hai người chụp ảnh selfie, giơ cao chìa khóa nhà mới',
+    'gal.alt10':
+      'Tranh vẽ hai người trong đồ trượt tuyết ngồi trên ghế giữa rừng thông phủ tuyết, anh cầm tấm ván trượt màu xanh lá',
+    'gal.alt11': 'Tranh vẽ cô dâu và chú rể dưới hàng cây vàng mùa thu, cô dâu cầm bó hoa hồng trắng',
+    'gal.alt12':
+      'Tranh vẽ hai người trong áo len màu kem đứng giữa cánh đồng cỏ vàng, phía sau là rừng cây mùa thu và núi',
+    'gal.alt13': 'Tranh vẽ hai người trong trang phục chạy bộ trước cổng về đích, anh đeo huy chương hoàn thành',
 
     'cats.kicker': 'Cũng là gia đình',
     'cats.title': 'Mango & Bean',
@@ -186,6 +188,7 @@ window.I18N = {
   },
 
   en: {
+    'meta.title': 'Chris Tran & Hallie Dao — 14 & 21 Nov 2026',
     brand: 'C & H',
     'a11y.skip': 'Skip to content',
     'a11y.menu': 'Open menu',
@@ -229,7 +232,8 @@ window.I18N = {
     'story.i4.body':
       "Utah is where we learned to snowboard together (and fell more times than we'd like to admit), rode every mountain we could reach, hiked the state's highest peaks and lined up for more races than we can count. Snowboarding and running became our thing — the hours side by side we love most.",
     'story.i4.alt1': 'Illustration of the couple in snow gear on a bench beside a green snowboard',
-    'story.i4.alt2': 'Illustration of the couple in running gear, arms around each other on a trail',
+    'story.i4.alt2':
+      'Illustration of the couple hiking with trekking poles, arms around each other on a summit above a lake',
     'story.i4.alt3': "Illustration of the couple after a race, the groom wearing a finisher's medal",
     'story.i5.date': 'Aug 2024',
     'story.i5.title': 'The proposal',
@@ -240,15 +244,9 @@ window.I18N = {
     'story.i6.title': 'We said “I do”',
     'story.i6.body': 'We exchanged our vows in Salt Lake City — the city that had quietly become home.',
     'story.i6.alt': 'Illustration of the groom in a waistcoat taking the hand of the bride, who holds a small bouquet',
-    'story.i7.date': 'Jan 2026',
-    'story.i7.title': 'Our first home',
+    'story.i7.date': 'Nov 2026',
+    'story.i7.title': 'Coming home to celebrate',
     'story.i7.body':
-      'Keys in hand, pizza on the floor of an empty living room, and a place that is finally, truly ours.',
-    'story.i7.alt1': 'Illustration of the couple taking a selfie and holding up their new house key',
-    'story.i7.alt2': 'Illustration of the couple sitting on the floor of their new home with two pizza boxes',
-    'story.i8.date': 'Nov 2026',
-    'story.i8.title': 'Coming home to celebrate',
-    'story.i8.body':
       "Now we're bringing it all back to Hanoi and Vinh to celebrate with our families and friends. The best part of this chapter is having you there with us.",
 
     'cer.kicker': 'You are warmly invited',
@@ -292,12 +290,19 @@ window.I18N = {
     'gal.lede': 'A few little moments from our life together.',
     'gal.alt1': 'Illustration of the bride and groom holding hands by a green window',
     'gal.alt2': 'Illustration of the bride and groom standing together with a bouquet',
-    'gal.alt3': 'Illustration of the groom draping his jacket over the bride beneath a tree',
     'gal.alt4':
       'Illustration of the couple in summer outfits, arms around each other: he in sunglasses and a cap, she in a long white dress',
     'gal.alt5': 'Illustration of the couple dressed for Hawaii: he in a floral shirt, she with a flower in her hair',
     'gal.alt6': 'Illustration of the couple cheek to cheek among autumn wildflowers',
     'gal.alt7': 'Illustration of the couple in cream knits standing among wildflowers',
+    'gal.alt8': 'Illustration of the couple taking a selfie and holding up their new house key',
+    'gal.alt10': 'Illustration of the couple in snow gear on a bench among snowy pines, he holding a green snowboard',
+    'gal.alt11':
+      'Illustration of the bride and groom beneath golden autumn trees, the bride holding a bouquet of white roses',
+    'gal.alt12':
+      'Illustration of the couple in cream sweaters standing in a field of golden grass, with autumn trees and mountains behind',
+    'gal.alt13':
+      "Illustration of the couple in running gear in front of a finish-line arch, he wearing a finisher's medal",
 
     'cats.kicker': 'Also family',
     'cats.title': 'Mango & Bean',
@@ -311,7 +316,7 @@ window.I18N = {
     'cats.alt3': 'Illustration of two cats curled up asleep together',
     'cats.cap4': "Mango's sunny spot",
     'cats.cap5': 'A nest for two',
-    'cats.cap6': 'Supervising the laptop',
+    'cats.cap6': 'Supervising work',
     'cats.alt4': 'Illustration of a ginger cat asleep on a folded blanket beside a potted plant in a sunny window',
     'cats.alt5': 'Illustration of a ginger cat and a grey tabby snuggled together in a torn-paper nest',
     'cats.alt6': 'Illustration of two cats on a wooden floor, one on each side of an open laptop',

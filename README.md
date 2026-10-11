@@ -30,8 +30,8 @@ Force a language with a query parameter:
 - `http://localhost:8000/?lang=vi`
 - `http://localhost:8000/?lang=en`
 
-Otherwise the page auto-detects the browser language and remembers the visitor's
-choice in `localStorage`.
+Otherwise the page opens in English and remembers the visitor's choice in
+`localStorage`. Send Vietnamese guests `https://chris-hallie-wedding.github.io/?lang=vi`.
 
 ---
 
@@ -86,7 +86,9 @@ Each entry appears twice, once under `vi` and once under `en`:
 "hero.note": "Chúng mình sắp về chung một nhà — và rất mong có bạn ở đó.",
 ```
 
-Change the text, save, reload. Nothing needs rebuilding. The two language blocks
+Change the text, save, reload. Nothing needs rebuilding. The tab title is
+`meta.title`. `index.html` also carries the English text as a no-JavaScript
+fallback, so when you change an `en` entry, mirror it there too. The two language blocks
 must keep the same set of keys — this checks that they do:
 
 ```sh
@@ -99,7 +101,7 @@ console.log("only in en:", k(en).filter(x=>!(x in vi)));
 '
 ```
 
-**Our Story** is eight dated milestones (`story.i1.*` through `story.i8.*`); the
+**Our Story** is seven dated milestones (`story.i1.*` through `story.i7.*`); the
 milestones that have an illustration carry it as `story.iN.alt` text. To add one,
 copy an `<li>` in `index.html` and add its keys to both languages.
 
@@ -114,37 +116,26 @@ scroll snapping instead of stacking — see the media query in `assets/css/style
 The site is plain static files at the repository root, so Pages needs no
 configuration beyond pointing at the branch.
 
-### The free-organisation route (gives you `chris-hallie.github.io`)
+It lives in the free organisation **`chris-hallie-wedding`**, repository
+**`chris-hallie-wedding.github.io`**, which gives the root URL
+**https://chris-hallie-wedding.github.io/**.
 
-GitHub derives a root Pages URL from the **account** name, so `chris-hallie.github.io`
-requires an account called `chris-hallie`. A free organisation is the clean way to
-get that without a second personal login:
-
-1. Create a free organisation named `chris-hallie`
-   (github.com → **+** → **New organization** → Free).
-2. Inside that org, create a repository named exactly **`chris-hallie.github.io`**.
-3. Push:
+1. Push to `main`:
 
    ```sh
-   git remote add origin git@github.com:chris-hallie/chris-hallie.github.io.git
-   git push -u origin main
+   git push origin main
    ```
 
-4. Repo **Settings → Pages → Source: Deploy from a branch**, branch `main`, folder `/ (root)`.
-5. Live at `https://chris-hallie.github.io` in a minute or two.
+2. Repo **Settings → Pages → Source: Deploy from a branch**, branch `main`, folder `/ (root)`
+   (one-time setup).
+3. Changes go live in a minute or two.
 
-### Or from your own account
+The canonical link, `og:url`, `og:image` and `twitter:image` in `index.html` use
+absolute `https://chris-hallie-wedding.github.io/...` URLs, because several chat
+apps and scrapers will not resolve a relative image path. Other asset paths are
+relative, so the site also works locally or in a subfolder.
 
-Push to any repo you own and enable Pages the same way. The URL becomes
-`https://<your-username>.github.io/<repo-name>/`. Every asset path in this project
-is **relative**, so the site works unchanged at a root domain or in a subfolder —
-no base-path edits needed either way.
-
-### A custom domain later
-
-Worth doing before you send the link widely in Vietnam: a `github.io` URL pasted
-into Zalo or Messenger looks less trustworthy than a real domain, and some link
-scanners treat it more harshly.
+### A custom domain later (optional)
 
 1. Buy the domain (~$10–12/yr).
 2. Add a file named `CNAME` at the repo root containing just the domain:
@@ -155,15 +146,10 @@ scanners treat it more harshly.
 
 3. At your DNS provider, point the apex at GitHub's four `A` records
    (`185.199.108.153`, `.109.153`, `.110.153`, `.111.153`) and add a `CNAME`
-   for `www` → `chris-hallie.github.io`.
+   for `www` → `chris-hallie-wedding.github.io`.
 4. Settings → Pages → **Enforce HTTPS**.
-
-Then update the `og:image` tags in `index.html` to absolute URLs — several chat
-apps and scrapers will not resolve a relative image path:
-
-```html
-<meta property="og:image" content="https://chrisandhallie.com/assets/og/share-1200x630.png">
-```
+5. Replace `https://chris-hallie-wedding.github.io/` with the new domain in the
+   canonical, `og:url`, `og:image` and `twitter:image` tags of `index.html`.
 
 ---
 
@@ -226,4 +212,4 @@ selection (Parisienne, Sacramento, Tangerine, Libre Baskerville and others).
 
 - [x] Google Form link and contact emails
 - [x] Hotels — `tr.p3.body` now asks guests to contact you for suggestions
-- [ ] Buy a domain before the wide send in Vietnam
+- [x] Publish at https://chris-hallie-wedding.github.io/ with absolute share URLs
