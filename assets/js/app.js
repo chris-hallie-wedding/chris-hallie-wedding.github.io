@@ -105,4 +105,55 @@
       io.observe(el)
     })
   }
+
+  /* ── lightbox ── */
+  var pics = document.querySelectorAll('figure:not(.hero-art) img')
+  if (pics.length && typeof HTMLDialogElement === 'function') {
+    var box = document.createElement('dialog')
+    box.className = 'lightbox'
+    var big = document.createElement('img')
+    box.appendChild(big)
+    document.body.appendChild(box)
+
+    // Pick the widest srcset candidate rather than whatever size the tile loaded.
+    function largest(img) {
+      var best = img.getAttribute('src')
+      var bestW = 0
+      ;(img.getAttribute('srcset') || '').split(',').forEach(function (c) {
+        var p = c.trim().split(/\s+/)
+        var w = parseInt(p[1], 10) || 0
+        if (p[0] && w > bestW) {
+          bestW = w
+          best = p[0]
+        }
+      })
+      return best
+    }
+
+    function open(img) {
+      big.src = largest(img)
+      big.alt = img.alt
+      box.showModal()
+    }
+
+    pics.forEach(function (img) {
+      img.tabIndex = 0
+      img.addEventListener('click', function () {
+        open(img)
+      })
+      img.addEventListener('keydown', function (e) {
+        if (e.key === 'Enter' || e.key === ' ') {
+          e.preventDefault()
+          open(img)
+        }
+      })
+    })
+
+    box.addEventListener('click', function () {
+      box.close()
+    })
+    box.addEventListener('close', function () {
+      big.removeAttribute('src')
+    })
+  }
 })()

@@ -842,6 +842,37 @@ a {
   }
 }
 
+/* ══════════════════════ LIGHTBOX ══════════════════════ */
+figure:not(.hero-art) img {
+  cursor: zoom-in;
+}
+.lightbox {
+  max-width: none;
+  max-height: none;
+  width: 100%;
+  height: 100%;
+  padding: var(--gut);
+  margin: 0;
+  border: 0;
+  background: transparent;
+  cursor: zoom-out;
+}
+.lightbox[open] {
+  display: grid;
+  place-items: center;
+}
+.lightbox::backdrop {
+  background: rgba(46, 42, 38, 0.86);
+}
+.lightbox img {
+  max-width: 100%;
+  max-height: calc(100vh - 2 * var(--gut));
+  max-height: calc(100dvh - 2 * var(--gut));
+  object-fit: contain;
+  border-radius: var(--radius);
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.35);
+}
+
 /* ══════════════════════ MOBILE NAV ══════════════════════ */
 @media (max-width: 860px) {
   .nav-toggle {
